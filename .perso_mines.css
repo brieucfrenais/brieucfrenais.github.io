@@ -1,0 +1,776 @@
+/*	
+Page personnelle de Brieuc Frénais, hébergée sur le serveur de l'ENS Rennes
+
+Fichier CSS
+*/
+
+/* Couleurs
+
+Orange Mines : ff693b
+Noir Mines : 111111
+Gris Mines : 888888
+Bleur vert (liens visistés) : 186679
+Un autre bleu : 66cee7
+gris du fond : d0dadc
+*/
+
+
+/* STYLES GLOBAUX */
+
+/* Corps du site */
+
+body
+{
+	background-color: #d0dadc;
+	color: #111111;
+
+	font-family: serif;
+	padding: 0;
+	margin: 0;
+
+	width: 100%;
+}
+
+#conteneur_total/* Bandes grises sur le côté */
+{
+	position: relative;
+	width: 68%;
+	min-height: 100vh;
+
+	margin: auto;
+
+	background-color: white;
+}
+
+/* Liens */
+
+a, a:visited
+{
+	color: #ff693b
+}
+
+a:hover
+{
+	color: #dc4c21;
+}
+
+.publi, .publi:visited
+{
+	color: black;
+	font-weight: bold;
+}
+
+em
+{
+	font-style: normal;
+	font-weight: bold;
+}
+
+/* HEADER */
+
+header
+{
+	position: fixed;
+	height: 60px;
+	width: 68%;
+
+	top: 0px;
+	background-color: #ff693b;
+	padding: 0px;
+
+	color: white;
+}
+	
+header .degrade /* Dégradé entre le header et le body */
+{
+	background-image: linear-gradient(#ff693b, #ffffff);
+	height: 10px;
+	width: 100%;
+}
+
+
+/* Menu de navigation */
+
+nav
+{
+	width: 100%;
+}
+
+nav ul
+{
+	list-style-type: none;
+
+	display: flex;
+	justify-content: center;
+	vertical-align: center;
+}
+
+nav li /* Liens de navigation */
+{
+	margin-left:20px;
+	margin-right: 20px;
+}
+
+nav a, nav a:visited
+{
+	color: white;
+	font-size: 1.2em;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+
+nav a:hover
+{
+	color: #cfe9f4;
+}
+
+nav a#in /* Lien de la page actuelle */
+{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#btnleft, #btnright /* Boutons effacés sur la version PC */
+{
+	display: none;
+}
+
+
+/* CORPS */
+
+section
+{
+	width: 96%;
+	padding: 0;
+	margin: 0 2% 0 2% ;
+
+	font-size: 1.2em;
+}
+
+#principal
+{
+	padding-top: 45px;
+	padding-bottom: 150px;
+
+
+	background-color: #ffffff;
+}
+
+section h1
+{
+	font-size: 1.65em;
+	text-align: right;
+}
+
+
+section h2
+{
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	color: #111111;
+}
+
+section h3
+{
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+section h4
+{
+	font-size: 1.2em;
+}
+
+p
+{
+	text-align: justify;
+}
+
+
+/* FOOTER */
+
+/* Structure du footer */
+
+
+footer
+{
+	position: fixed;
+	height: 150px;
+	width: 68%;
+	padding: 0px;
+	bottom: 0px;
+
+	background-color: #111111;
+	color: #888888;
+}
+
+footer div
+{
+	padding-top: 0px;
+	text-align: center;
+
+	border-left: 3px dotted white;
+}
+
+
+#conteneur
+{
+	width: 100%;
+	height: 140px;
+	display: grid; 
+	grid-template-columns: 1fr 6fr 6fr 0fr 1fr;
+	grid-template-rows: 100%;
+	gap: 0px;
+
+	border: none;
+}
+
+#contact
+{
+	border-left: 3px dotted white;
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+#empty
+{
+	grid-column-start: 1;
+	grid-column-end: 2;
+
+	border: none;
+}
+
+#links
+{
+	grid-column-start: 3;
+	grid-column-end: 4;
+
+	display: grid; 
+	grid-template-columns: 1fr 2fr 2fr;
+	grid-template-rows: 100%;
+	gap: 0px;
+}
+
+#links img
+{
+	height: 4vw;
+}
+
+#links a
+{
+	margin: auto;
+}
+
+.trait
+{
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+
+#drapeaux
+{
+	grid-column-start: 5;
+	grid-column-end: 6;
+	
+	border: none;
+}
+
+#drapeaux img
+{
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+.ens
+{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row: 1 / 2;
+}
+
+.irma
+{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row: 1 / 2;
+}
+
+.ufr
+{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row: 1 / 2;
+}
+
+
+footer .degrade /* Dégradé entre le body et le footer */
+{
+	background-image: linear-gradient(#ffffff,#111111);
+	height: 8px;
+	width: 100%;
+
+	border: none;
+}
+
+footer section
+{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+
+	font-size: 1.3em;
+
+	border :none;
+}
+
+/* Fonte du footer */
+
+footer h1
+{
+	font-size: 1.3em;
+	font-style: bold;
+	color: white;
+	text-align: center;
+
+	margin-top: 5px;
+	margin-bottom: -10px;
+}
+
+
+
+footer ul
+{
+	font-size: 0.8em;
+	list-style-type: none;
+
+	margin: 3%;
+	padding: 0px;
+
+	word-wrap: break-word;
+}
+
+footer a
+{
+	color: white;
+}
+
+footer a:visited, footer a:hover
+{
+	color: #cfe9f4;
+}
+
+footer .logo
+{
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+/* Liens entre les deux versions du site */
+@media (max-width: 1600px)
+{
+
+footer section
+{
+	font-size: 1.0em;
+}
+
+footer h1
+{
+	margin-bottom: 0px;
+}
+
+
+}
+
+@media (max-width: 1500px)
+{
+
+#links
+{
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 50% 50%;
+}
+
+.ens
+{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row: 1 / 2;
+}
+
+.irma
+{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row: 1 / 2;
+}
+
+.ufr
+{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row: 2 / 3;
+}
+}
+
+
+/* VERSION TABLETTE */
+/* On enlève simplement les bords */
+
+@media (max-width: 1000px)
+{
+
+
+#conteneur_total
+{
+	width: 100%;
+}
+
+header
+{
+	width: 100%;
+}
+
+#principal
+{
+	padding-bottom: 240px;
+}
+
+footer
+{
+	position: absolute; 
+	bottom: 0;
+	height: 240px;
+	width: 100%;
+
+
+	background-color: #ff693b;
+	color: white;
+}
+
+footer h1
+{
+	margin-bottom: -20px;
+}
+
+#conteneur
+{
+	grid-template-columns: 0fr 8fr 0fr 2fr;
+	grid-template-rows: 100px 110px;
+	gap: 10px;
+}
+
+#contact
+{
+	border-left: none;
+	border-bottom: 3px dotted white;
+
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+#links
+{
+	border: none;
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+	grid-template-rows: 100%;
+}
+
+#links a
+{
+	margin: auto;
+}
+
+#links img
+{
+	height: 10vw;
+}
+
+footer .logo
+{
+	margin: 0px; 
+}
+
+.ens
+{
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.irma
+{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.ufr
+{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row: 1 / 2;
+}
+
+
+.trait
+{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;	
+}
+
+#drapeaux
+{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	margin-top: -10px;
+}
+
+nav a, nav a:visited
+{
+	font-size: 2vw; /* On adapte la taille de la police à celle de l'écran */
+}
+
+footer h1
+{
+	font-size: 1em;
+}
+
+footer ul
+{
+	font-size: 0.8em;
+}
+
+}
+
+@media (max-width: 800px)
+{
+
+nav a, nav a:visited
+{
+	font-size: 2.5vw; /* On adapte la taille de la police à celle de l'écran */
+}
+
+}
+
+/* VERSION MOBILE */
+/* Le design change dans cette version */
+
+@media screen and (max-width: 480px) 
+{
+
+#conteneur_total
+{
+	width: 100%;
+}
+
+/* Menu de navigation */
+
+header
+{
+	position: absolute; /* On fixe le header */
+	width: 100%;
+}
+
+nav
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;	
+}
+
+#btnleft, #btnright
+{
+	display: block;
+	cursor: pointer; /* On affiche les boutons de déplacement dans le menu */
+
+	text-align: center;
+
+	height: 20px;
+	width: 10vw;
+}
+
+nav li
+{
+	display: none; /* On cache tous les liens... */
+}
+
+nav li.on
+{
+	display: block; /*... sauf un */
+	margin-left:0;
+	margin-right: 0;
+
+	width: 70vw;
+
+	text-align: center;
+}
+
+nav a, nav a:visited
+{
+	font-size: 110%;
+}
+
+nav ul
+{
+	padding : 0;
+}
+
+nav #ul
+{
+	width: 80vw;
+}
+
+/* Corps de page */
+
+section h1
+{
+	font-size: 1.65em;
+	text-align: center;
+}
+
+/* Footer : rentrer dans la bande initiale */
+
+#principal
+{
+	padding-bottom: 240px;
+}
+
+footer
+{
+	position: absolute; 
+	bottom: 0;
+	height: 240px;
+	width: 100%;
+
+
+	background-color: #ff693b;
+	color: white;
+}
+
+footer h1
+{
+	margin-bottom: -20px;
+}
+
+#conteneur
+{
+	grid-template-columns: 0fr 8fr 0fr 2fr;
+	grid-template-rows: 100px 110px;
+	gap: 10px;
+}
+
+#contact
+{
+	border-left: none;
+	border-bottom: 3px dotted white;
+
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+#links
+{
+	border: none;
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+	grid-template-rows: 100%;
+}
+
+#links a
+{
+	margin: auto;
+}
+
+#links img
+{
+	height: 10vw;
+}
+
+footer .logo
+{
+	margin: 0px; 
+}
+
+.ens
+{
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.irma
+{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.ufr
+{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row: 1 / 2;
+}
+
+
+.trait
+{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;	
+}
+
+#drapeaux
+{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	margin-top: -10px;
+}
+
+footer h1
+{
+	font-size: 1em;
+}
+
+footer ul
+{
+	font-size: 0.8em;
+}
+
+
+}
