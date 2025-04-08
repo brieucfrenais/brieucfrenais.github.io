@@ -263,6 +263,12 @@ footer div
 	height: 4vw;
 }
 
+#links img.iecl
+{
+	height: 3vw;
+}
+
+
 #links a
 {
 	margin: auto;
@@ -507,9 +513,15 @@ footer h1
 	height: 10vw;
 }
 
+#links img.iecl
+{
+	height: 8vw;
+}
+
+
 footer .logo
 {
-	margin: 0px; 
+	margin: 10px; 
 }
 
 .ens
@@ -721,7 +733,12 @@ footer h1
 
 footer .logo
 {
-	margin: 0px; 
+	margin-left: 0px;
+}
+
+#links img.iecl
+{
+	height: 8vw;
 }
 
 .ens
